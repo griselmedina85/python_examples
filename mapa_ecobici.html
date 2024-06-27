@@ -1,0 +1,2461 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Google Maps - gmplot</title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyCCO6I9dn1uJknxSxb4noVV57ZCq_mSqnY"></script>
+<script type="text/javascript">
+    function initialize() {
+        var map = new google.maps.Map(document.getElementById("map_canvas"), {
+            zoom: 13,
+            center: new google.maps.LatLng(-34.608300, -58.371200)
+        });
+
+        var marker_icon_FF0000 = {
+            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAACBklEQVRIia3VzUtUURgH4GdG/AiyZZShtWgXUbSIFtGqRYtqWRLhXyBYf0K6MaJQ2gRtayHtijYpleHKSCgIcRHoIiOSKEzLKea0OOeqTfPlzPzg5Qwz9zz3nXPvPTeneo7gNA4gjyI+Ygbva8z9L2cxi9BHOE+4msY+gliz6biayWE0R7GfMEcoEkJJzRH6CbnY+WiaVxEc6yY8KQOVq8eE7tj1WCV4qIswUyeY1QyhK8JDpWAP1m7vEMzqTkTXkrOZkYOEQoNogXAowiPE2wQuDqC9nktZJu0YSE72XRs2phrsMqup2OkG2vLpRB19DXaZJc3vQHv294Um0e3z8yigsNQkmuYXUMie5/npJtE0fz55YLiXsNHELdUbV2B4+4n2Y/Vmg+itCK4m558MdhBe7hCcJnRGdLDS0ox3E17XCb4h7IngeLX1zuFhD2G5BriytY4Tqmx9WXbh3Tnl99KsLkdwAbtrgVmO4/eDCuCkzd3/TL1glru9hF8lYJFwMoKPdgrCXqzfL0GfR7CIo42gcO9YCXopolONgnAC4W0Cv9l8dVxpBoWFGwmdiOC6Glc8X+3HlKeT6cOzOLzAjyaaBBc602ZzOHZ6vVkQ9kl7Qi6ip1qBwpdrEfwjPnFVU8+awuKrOC7hZ6vQlQ9baM3Ui379HsfVVqKf07jcSvRTGhfrOfgvIP3ECS77BDoAAAAASUVORK5CYII=",
+            labelOrigin: new google.maps.Point(10, 11)
+        };
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.592424, -58.374710),
+            title: "002 - Retiro I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.612207, -58.369129),
+            title: "003 - ADUANA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.603008, -58.368856),
+            title: "004 - Plaza Roma",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.580550, -58.420954),
+            title: "005 - Plaza Italia",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.628526, -58.369758),
+            title: "006 - Parque Lezama",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.606498, -58.381098),
+            title: "007 - OBELISCO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.585443, -58.407741),
+            title: "009 - Parque Las Heras",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.592710, -58.388807),
+            title: "012 - Plaza Vicente Lopez",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.610090, -58.406000),
+            title: "013 - ONCE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.577424, -58.426387),
+            title: "014 - Pacifico",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.606410, -58.418731),
+            title: "017 - Plaza Almagro",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.640111, -58.406432),
+            title: "021 - Parque Patricios",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.593863, -58.382550),
+            title: "022 - Arenales",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.600139, -58.379836),
+            title: "023 - Suipacha",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.610583, -58.380894),
+            title: "024 - ALSINA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.589427, -58.416118),
+            title: "025 - Plaza Guemes",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.600752, -58.363872),
+            title: "026 - JUANA MANSO I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.599068, -58.390089),
+            title: "027 - Montevideo",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.607941, -58.433557),
+            title: "029 - Parque Centenario",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.606745, -58.373656),
+            title: "032 - Catedral",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.597091, -58.398981),
+            title: "033 - Facultad de Medicina",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.596425, -58.371847),
+            title: "035 - INGENIERO BUTTY",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.601060, -58.374535),
+            title: "036 - MAIPÚ",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.597050, -58.382840),
+            title: "038 - Plaza Libertad",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.637123, -58.405888),
+            title: "041 - PARQUE PATRICIOS II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.584018, -58.389921),
+            title: "334 - CENTRO DE EXPOSICIONES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.575515, -58.413883),
+            title: "044 - Ecoparque",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.601864, -58.386693),
+            title: "045 - Uruguay",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.616373, -58.374370),
+            title: "046 - Chile",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.623640, -58.363245),
+            title: "034 - Colonia Express",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.629053, -58.422611),
+            title: "049 - 33 Orientales",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.583735, -58.401080),
+            title: "050 - Hospital Rivadavia",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.601478, -58.382126),
+            title: "051 - TUCUMAN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.598210, -58.422069),
+            title: "054 - Acuña de Figueroa",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.588567, -58.425999),
+            title: "056 - Plaza Palermo Viejo",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.613250, -58.370645),
+            title: "057 - BELGRANO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.575277, -58.434688),
+            title: "058 - Ministro Carranza",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.617654, -58.380565),
+            title: "018 - Independencia",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.601651, -58.371079),
+            title: "060 - 25 De Mayo",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.618927, -58.505177),
+            title: "098 - BENITO JUAREZ",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.599778, -58.374687),
+            title: "063 - Reconquista",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.593651, -58.394109),
+            title: "064 - RIOBAMBA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.587312, -58.415787),
+            title: "065 - Julián Álvarez",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.594547, -58.413871),
+            title: "066 - Billinghurst",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.552148, -58.480464),
+            title: "105 - PARQUE SAAVEDRA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.596101, -58.404609),
+            title: "069 - Ecuador",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.592686, -58.426060),
+            title: "070 - ARAOZ",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.602667, -58.383356),
+            title: "071 - CERRITO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.630681, -58.371823),
+            title: "073 - Ruy Díaz de Guzmán",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.604390, -58.434540),
+            title: "074 - INSTITUTO LELOIR",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.612298, -58.398987),
+            title: "075 - Plaza Primero de Mayo",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.581135, -58.501487),
+            title: "109 - ESTACION PUEYRREDON",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.611890, -58.363930),
+            title: "079 - AZUCENA VILLAFLOR",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.624581, -58.434123),
+            title: "080 - VALLE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.607892, -58.426395),
+            title: "082 - HOSPITAL ITALIANO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.603269, -58.389373),
+            title: "083 - Paraná",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.594806, -58.409178),
+            title: "085 - AGUERO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.621268, -58.401681),
+            title: "086 - SAAVEDRA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.619845, -58.431494),
+            title: "087 - Guayaquil",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.582547, -58.405667),
+            title: "089 - Cabello",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.617448, -58.397602),
+            title: "091 - Pasco",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.631644, -58.405339),
+            title: "092 - Salcedo",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.620798, -58.394464),
+            title: "093 - CARLOS CALVO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.591511, -58.449652),
+            title: "094 - GÚZMAN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.602781, -58.411659),
+            title: "096 - Carlos Gardel",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.608164, -58.377900),
+            title: "037- Claudia Pía Baudracco",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.596096, -58.435408),
+            title: "099 - Malabia",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.589186, -58.442440),
+            title: "101 - Fitz Roy",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.585121, -58.449299),
+            title: "102 - ROSETI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.587617, -58.455212),
+            title: "104 - Federico Lacroze",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.630377, -58.395844),
+            title: "107 - HOSPITAL GARRAHAN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.605488, -58.364686),
+            title: "111 - MACACHA GUEMES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.612075, -58.380384),
+            title: "112 - 9 de Julio",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.593989, -58.371424),
+            title: "114 - TORRE MACRO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.592171, -58.402589),
+            title: "116 - HOSPITAL ALEMÁN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.619553, -58.373159),
+            title: "117 - HUMBERTO 1°",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.617020, -58.402653),
+            title: "118 - MEXICO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.617509, -58.409288),
+            title: "120 - HOSPITAL RAMOS MEJIA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.601173, -58.428509),
+            title: "121 - YATAY",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.591561, -58.419816),
+            title: "122 - COSTA RICA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.580538, -58.411965),
+            title: "124 - UGARTECHE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.639225, -58.369589),
+            title: "126 - Ministerio de Justicia y Seguridad",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.605152, -58.368821),
+            title: "128 - PARQUE DEL BAJO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.591738, -58.374364),
+            title: "130 - RETIRO II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.598404, -58.399016),
+            title: "131- HOSPITAL DE CLÍNICAS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.603369, -58.372763),
+            title: "132 - CORRIENTES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.683188, -58.468952),
+            title: "134 - SOLDADO DE LA FRONTERA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.597642, -58.378363),
+            title: "135 - MARCELO T. DE ALVEAR",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.615598, -58.367492),
+            title: "137 - AZOPARDO Y CHILE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.635359, -58.387672),
+            title: "138 - Hospital Britanico",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.601874, -58.406094),
+            title: "144 - PUEYRREDÓN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.622112, -58.407842),
+            title: "146 - Hospital Francés",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.645177, -58.484555),
+            title: "323 - Parque Avellaneda II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.615327, -58.381364),
+            title: "149 - LIMA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.618755, -58.355465),
+            title: "150 - RODRIGO BUENO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.618164, -58.359631),
+            title: "152 - JULIETA LANTERI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.631028, -58.362888),
+            title: "153 - JUAN MANUEL DE BLANES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.645082, -58.417492),
+            title: "155 - Parque José Evaristo Uriburu",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.577590, -58.407470),
+            title: "156 - Plaza Alemania",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.592735, -58.445070),
+            title: "158 - VILLARROEL",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.602078, -58.419676),
+            title: "161 - Humahuaca",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.608985, -58.401924),
+            title: "162 - LARREA Y BARTOLOMÉ MITRE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.609566, -58.406431),
+            title: "163 - ONCE II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.617301, -58.369898),
+            title: "164 - FACULTAD DE INGENIERIA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.597048, -58.407614),
+            title: "165 - PLAZA MONSEÑOR MIGUEL DE ANDREA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.588347, -58.394148),
+            title: "166 - Cementerio de Recoleta",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.606984, -58.448540),
+            title: "275 - PLAZA 24 DE SEPTIEMBRE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.618622, -58.381227),
+            title: "168 - Estados Unidos",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.603281, -58.399755),
+            title: "171 - Pasteur",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.625426, -58.371082),
+            title: "172 - BRASIL",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.597225, -58.391768),
+            title: "174 - MINISTERIO DE EDUCACION",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.626851, -58.380707),
+            title: "147 - Constitución",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.555254, -58.494845),
+            title: "067 - PARQUE SARMIENTO I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.568165, -58.412121),
+            title: "177 -PLANETARIO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.638479, -58.364289),
+            title: "179 - CASA SAN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.592665, -58.412007),
+            title: "181 - BILLINGHURST Y MANSILLA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.578048, -58.435247),
+            title: "182 - RAVIGNANI Y GUATEMALA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.615699, -58.389973),
+            title: "183 - VIRREY CEVALLOS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.630613, -58.391342),
+            title: "184 - Pedro Echague",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.613636, -58.406441),
+            title: "186 - MANZANA 66",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.552571, -58.450897),
+            title: "261 - QUINTEROS LIDORO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.623930, -58.391250),
+            title: "373 - Jorgelina De Simone",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.588689, -58.385211),
+            title: "189 - POSADAS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.585076, -58.411114),
+            title: "190 - JUNCAL",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.607931, -58.380836),
+            title: "191 - Rivadavia y 9 de Julio",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.590863, -58.406165),
+            title: "193 - ARENALES Y AGUERO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.606076, -58.422463),
+            title: "194 - PERÓN Y ACUÑA DE FIGUEROA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.627767, -58.366025),
+            title: "196 - HOSPITAL ARGERICH",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.620998, -58.493044),
+            title: "197 - PLAZA CIUDAD DE UDINE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.622260, -58.416014),
+            title: "199 - ESTADOS UNIDOS Y BOEDO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.588300, -58.404261),
+            title: "200 - AUSTRIA Y FRENCH",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.583749, -58.390602),
+            title: "001 - FACULTAD DE DERECHO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.628757, -58.356259),
+            title: "108 - Usina del Arte",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.614948, -58.427818),
+            title: "167 - Hipólito Yrigoyen",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.584950, -58.437339),
+            title: "159 - Fitz Roy & Gorriti",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.652377, -58.487359),
+            title: "123 - BASUALDO Y RODO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.580716, -58.438404),
+            title: "145 - RAVIGNANI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.572165, -58.411278),
+            title: "335 - General Urquiza",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.600275, -58.434875),
+            title: "129 - Velasco",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.599659, -58.442685),
+            title: "136 - Acevedo",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.585878, -58.424996),
+            title: "113 - Guatemala",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.589968, -58.411493),
+            title: "059 - Coronel Diaz",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.636027, -58.415633),
+            title: "140 - Las Casas",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.635128, -58.427573),
+            title: "097 - Avelino Diaz",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.575919, -58.418543),
+            title: "160 - Godoy Cruz y Libertador",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.623400, -58.424853),
+            title: "178 - José Marmol",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.610361, -58.432763),
+            title: "188 - Aranguren",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.616488, -58.365668),
+            title: "010 - Madero UCA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.581576, -58.451530),
+            title: "243 - PLAZOLETA CELEDONIO FLORES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.567825, -58.464504),
+            title: "259 - PLAZA CASTELLI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.605118, -58.446000),
+            title: "384 - PLAZA BENITO NAZAR",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.559978, -58.479058),
+            title: "252 - Tamborini",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.548006, -58.446944),
+            title: "344 - UNIVERSIDAD DI TELLA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.573734, -58.486924),
+            title: "281 - Villa Urquiza",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.562161, -58.455166),
+            title: "254 - Plaza Rafael Hernandez",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.636709, -58.501355),
+            title: "302 - ESTACION VILLA LURO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.565337, -58.420621),
+            title: "391 - Plaza República de Ecuador",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.600874, -58.494123),
+            title: "348 - Villa del Parque",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.576949, -58.403984),
+            title: "103 - MALBA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.552594, -58.442940),
+            title: "248 - Husares",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.583896, -58.466494),
+            title: "282 - Tronador",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.573522, -58.474635),
+            title: "346 - Plaza Zapiola",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.641728, -58.402483),
+            title: "388 - Plaza Jose C Paz",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.647121, -58.374336),
+            title: "331 - CALIFORNIA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.616354, -58.417074),
+            title: "383 - BOEDO Y VENEZUELA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.620794, -58.441351),
+            title: "276 - PRIMERA JUNTA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.622092, -58.448547),
+            title: "374 - Puan",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.570825, -58.481236),
+            title: "264 - Plaza Marcos Sastre",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.565521, -58.455334),
+            title: "336 - La Pampa",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.559152, -58.444176),
+            title: "290 - Club Excursionistas",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.553079, -58.435223),
+            title: "371 - Paseo de las Americas",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.616151, -58.440584),
+            title: "272 - Plaza Bruno Giordano",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.609709, -58.467297),
+            title: "349 - Plaza Saenz Peña",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.622003, -58.457555),
+            title: "270 - PLAZA DEL ANGEL GRIS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.555931, -58.481232),
+            title: "283 - BALBIN II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.641960, -58.450500),
+            title: "361 - Plaza Don Segundo Sombra",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.597612, -58.498542),
+            title: "315 - BEIRO Y SAN MARTÍN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.550300, -58.477000),
+            title: "399 - GARCIA DEL RIO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.577329, -58.457799),
+            title: "260 - SAN MIGUEL DE GARICOITS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.640114, -58.430260),
+            title: "370 - Beauchef",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.629967, -58.473725),
+            title: "365 - Venancio Flores",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.616758, -58.446751),
+            title: "223 - GAINZA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.562277, -58.459289),
+            title: "256 - PLAZA NORUEGA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.563539, -58.436115),
+            title: "292 - PLAZA BOLIVIA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.564122, -58.469813),
+            title: "233 - MONROE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.633528, -58.449379),
+            title: "222 - SIMON BOLIVAR",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.613778, -58.458315),
+            title: "350 - Plaza Irlanda",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.631018, -58.435056),
+            title: "229 - RIGLOS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.559801, -58.448314),
+            title: "255 - BARRANCAS DE BELGRANO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.617247, -58.381627),
+            title: "244 - UADE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.631705, -58.466143),
+            title: "221 - CULPINA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.660362, -58.467639),
+            title: "309 - UTN II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.651846, -58.415771),
+            title: "340 - PLAZA NUEVA POMPEYA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.589300, -58.484800),
+            title: "395 - Agronomia II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.649997, -58.424773),
+            title: "341 - COMUNA 4",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.567633, -58.436752),
+            title: "251 - Solar de la Abadía",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.621412, -58.519781),
+            title: "298 - PLAZA DR. JUAN B. TERAN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.679483, -58.474249),
+            title: "356 - ESTACIÓN LUGANO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.597210, -58.474211),
+            title: "213 - Hospital Alvear",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.605567, -58.453475),
+            title: "205 - SAN MARTIN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.603936, -58.457317),
+            title: "285 - ESPINOSA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.551304, -58.454181),
+            title: "289 - MONTAÑESES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.565409, -58.459298),
+            title: "240 - ECHEVERRIA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.578933, -58.484056),
+            title: "280 - JURAMENTO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.677131, -58.454286),
+            title: "366 - VILLA OLÍMPICA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.593141, -58.435187),
+            title: "100 - Plaza Gurruchaga",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.600831, -58.472127),
+            title: "148 -La Paternal",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.600800, -58.503350),
+            title: "203 - Beiro",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.615945, -58.470980),
+            title: "206 - Galicia",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.599731, -58.511146),
+            title: "207 - PLAZA ARENALES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.547540, -58.467844),
+            title: "359 - PLAZA BALCARCE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.616813, -58.484297),
+            title: "218 - Campana",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.610482, -58.474369),
+            title: "231 - Margariños Cervantes",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.570387, -58.466312),
+            title: "232 - Sucre y Martinez",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.599036, -58.364695),
+            title: "237 - Madero Office",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.567483, -58.446381),
+            title: "242 - Plazoleta Rafael del Riego",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.561486, -58.465586),
+            title: "249 - Balbín",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.555602, -58.450479),
+            title: "250 - Fleni",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.569187, -58.453608),
+            title: "258 - Plaza J.J. Paso",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.566033, -58.479879),
+            title: "262 - Holmberg",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.643900, -58.463114),
+            title: "354 - José Martí",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.570161, -58.435580),
+            title: "381 - Matienzo Y Arce",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.635278, -58.482533),
+            title: "360 - Plaza Ramon Falcon",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.616659, -58.477706),
+            title: "287 - Belaustegui",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.598070, -58.482079),
+            title: "378 - AGRONOMIA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.592244, -58.491797),
+            title: "304 - Navarro",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.590964, -58.500336),
+            title: "305 - Plaza Martin Rodriguez",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.631700, -58.455340),
+            title: "269 - Plaza De La Misericordia",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.636406, -58.470136),
+            title: "322 - MARTÍ Y DIRECTORIO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.582337, -58.481083),
+            title: "265 - Plaza Exodo Jujeño",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.647100, -58.469800),
+            title: "367 - Eva Perón",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.604597, -58.484812),
+            title: "301 - Arregui Y Terrada",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.627403, -58.488112),
+            title: "324 - Las Victorias",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.623123, -58.468287),
+            title: "215 - HOSPITAL ALVAREZ",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.560200, -58.428100),
+            title: "390 - De Los Ombues",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.616247, -58.465884),
+            title: "274 - Gavilán",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.605431, -58.477255),
+            title: "204 - Biarritz",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.571799, -58.489541),
+            title: "263 - Plaza Echeverria",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.579519, -58.461835),
+            title: "267 - Plaza 25 De Agosto",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.606160, -58.493141),
+            title: "268 - Plaza Aristóbulo Del Valle",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.565400, -58.475900),
+            title: "277 - Coghlan",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.602028, -58.465568),
+            title: "278 - Donato Alvarez",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.554581, -58.485381),
+            title: "297 - TRONADOR Y GARCÍA DEL RÍO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.590273, -58.466932),
+            title: "300 - Jose Artigas",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.596849, -58.453280),
+            title: "303 - Huaura",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.578990, -58.469820),
+            title: "313 - De Los Incas",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.644684, -58.393876),
+            title: "316 - Buenos Aires",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.642425, -58.478266),
+            title: "330 - Parque Avellaneda",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.569120, -58.500250),
+            title: "364 - CERRETTI Y MANUELA PEDRAZA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.660448, -58.432017),
+            title: "372 - VILLA SOLDATI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.661817, -58.501330),
+            title: "382 - MERCADO DE HACIENDA MATADEROS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.611280, -58.450043),
+            title: "385 - Franklin",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.553262, -58.469133),
+            title: "257 - Plaza Francisco Ramirez",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.576340, -58.502480),
+            title: "127 - PLAZA LEONARDO N. ALEM",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.580938, -58.444580),
+            title: "345 - Plaza Mafalda",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.544600, -58.439600),
+            title: "375 - Ciudad Universitaria I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.564540, -58.502890),
+            title: "379 - PARQUE SARMIENTO II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.559255, -58.487772),
+            title: "043 - PLAZA ALBERDI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.639807, -58.399050),
+            title: "387 - Luna",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.643013, -58.422843),
+            title: "394 - Av. La Plata",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.555700, -58.457900),
+            title: "396 - PLAZA ALBERTI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.648402, -58.513645),
+            title: "397 - PARQUE SANTOJANNI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.587458, -58.473951),
+            title: "225 - HOSPITAL TORNU",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.638974, -58.510102),
+            title: "201 - PLAZA EJERCITO DE LOS ANDES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.542628, -58.436913),
+            title: "362 - PARQUE DE LA MEMORIA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.619879, -58.435801),
+            title: "187 - Jose Maria Moreno",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.637697, -58.373726),
+            title: "273 - Plazoleta Colombia",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.545690, -58.465140),
+            title: "247 - PLAZA LUCIO DEMARE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.544503, -58.459499),
+            title: "227 -Club Ciudad de Buenos Aires",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.576530, -58.443490),
+            title: "253 - Plaza Colegiales",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.590648, -58.428899),
+            title: "142 - ARMENIA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.608936, -58.370716),
+            title: "061 - Ministerio de Economia",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.582090, -58.378800),
+            title: "393 - Barrio 31",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.628836, -58.463297),
+            title: "352 - San Jose de Flores",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.629480, -58.494485),
+            title: "028 - Plaza de la Bandera",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.634030, -58.506940),
+            title: "176 - Plaza Derechos del hombre",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.626520, -58.508050),
+            title: "039 - Plaza Don Bosco",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.628050, -58.521740),
+            title: "110 - PLAZA CD DE BANFF",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.636426, -58.444007),
+            title: "219 - Parque Chacabuco II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.607500, -58.511930),
+            title: "133 - BEIRO Y SEGUROLA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.580880, -58.493630),
+            title: "106 - MOSCONI Y CONSTITUYENTES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.541000, -58.444100),
+            title: "377 - CIUDAD UNIVERSITARIA III",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.590463, -58.507117),
+            title: "192 - HOSPITAL SIRIO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.608096, -58.411840),
+            title: "333 - PARQUE DE LA ESTACIÓN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.593418, -58.513837),
+            title: "062 - PARQUE ONEGA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.594729, -58.503309),
+            title: "173 - EL LIBERTADOR",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.575129, -58.452756),
+            title: "310 - FREIRE II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.613403, -58.493358),
+            title: "216 - EMILIO LAMARCA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.610892, -58.503020),
+            title: "224 - BAIGORRIA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.616541, -58.526018),
+            title: "238 - PLAZA LAS TOSCANERAS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.618292, -58.498525),
+            title: "279 - PLAZA MONTE CASTRO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.635005, -58.395054),
+            title: "311 - SEC. DE INNOVACION Y TRANSFORMACIÓN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.572056, -58.447524),
+            title: "015 - AMENABAR",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.626288, -58.455300),
+            title: "347 - CARABOBO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.629334, -58.483603),
+            title: "353 - PLAZA VÉLEZ SARSFIELD",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.643038, -58.512700),
+            title: "369 - PLAZA LARRAZABAL",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.550468, -58.430024),
+            title: "376 - PASEO DE LA COSTANERA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.543689, -58.477126),
+            title: "175 - PLAZA MACKENNA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.555484, -58.476804),
+            title: "295 - SUPERÍ",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.553465, -58.421440),
+            title: "230 - PASEO DE LA COSTANERA II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.542091, -58.470570),
+            title: "220 - PLAZA FELIX LIMA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.558137, -58.467259),
+            title: "239 - AVENIDA CRAMER",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.565709, -58.495218),
+            title: "234 - AVENIDA TRIUNVIRATO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.547604, -58.456566),
+            title: "288 - SECRETARÍA DE DEPORTES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.564771, -58.402021),
+            title: "245 - COSTANERA NORTE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.612296, -58.443295),
+            title: "266 - PLAZA SABATTINI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.609710, -58.421563),
+            title: "325 - MEDRANO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.596744, -58.459403),
+            title: "208 - NICASIO OROÑO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.614787, -58.511672),
+            title: "314 - ALLENDE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.583160, -58.513166),
+            title: "052 - CAMPANA II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.574424, -58.496232),
+            title: "307 - CERRETTI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.586598, -58.494959),
+            title: "055 - HABANA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.628556, -58.446814),
+            title: "286 - FILOSOFIA Y LETRAS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.553212, -58.464224),
+            title: "235 - COMUNA 13",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.549249, -58.461941),
+            title: "020 - GRECIA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.540675, -58.475225),
+            title: "296 - SAN ISIDRO LABRADOR",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.624720, -58.475180),
+            title: "214 - MORÓN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.622641, -58.482020),
+            title: "337 - AV. J. B. JUSTO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.569435, -58.399369),
+            title: "040 - PARQUE SALGUERO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.673248, -58.455319),
+            title: "271 - VILLA SOLDATI II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.639172, -58.494786),
+            title: "170 - RAFAELA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.633638, -58.489810),
+            title: "386 - VELEZ SARSFIELD",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.575441, -58.462689),
+            title: "284 - AV. FOREST",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.581615, -58.475057),
+            title: "195 - PARQUE CHAS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.597130, -58.490739),
+            title: "308 - SAN MARTIN II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.574246, -58.414655),
+            title: "294 - PLAZOLETA RÍO DE LA PLATA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.570998, -58.423347),
+            title: "368 - PLAZA DE LA SHOÁ",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.574501, -58.424814),
+            title: "332 - PACÍFICO II",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.573899, -58.431782),
+            title: "329 - LAS CAÑITAS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.592915, -58.375443),
+            title: "053 - AV. DEL LIBERTADOR ",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.672632, -58.445518),
+            title: "180 - PARQUE OLIMPICO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.596465, -58.466384),
+            title: "226 - AV. WARNES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.602244, -58.442548),
+            title: "119 - PLAZOLETA BENEDIT",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.557933, -58.460703),
+            title: "338 - AV. CABILDO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.536691, -58.466813),
+            title: "317 - ESCUELA RAGGIO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.541628, -58.463404),
+            title: "088 - NUÑEZ ",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.588727, -58.438386),
+            title: "068 - AV. CORDOBA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.636705, -58.495286),
+            title: "042 - Skate Park Villa Luro",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.613259, -58.430119),
+            title: "011 - RIO DE JANEIRO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.616511, -58.432350),
+            title: "031 - PARQUE RIVADAVIA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.633622, -58.521258),
+            title: "048 - JOSE AMALFITANI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.573033, -58.503908),
+            title: "072 - INSTITUTO POLITÉCNICO MODELO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.561191, -58.492030),
+            title: "077 - CRISOLOGO LARRALDE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.582963, -58.429979),
+            title: "081 - PARQUE DE LAS CIENCIAS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.602517, -58.449659),
+            title: "090 - HONORIO PUEYRREDON",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.595474, -58.377482),
+            title: "019 - PLAZA  SAN MARTIN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.570808, -58.458061),
+            title: "389 - Av. ELCANO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-34.545091, -58.451432),
+            title: "047 - PARQUE DE LA INNOVACIÓN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+    }
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+    <div id="map_canvas" style="width: 100%; height: 100%;" />
+</body>
+</html>
